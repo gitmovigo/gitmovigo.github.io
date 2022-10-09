@@ -572,6 +572,9 @@ RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMC0wOVQyMDowMjoyNyswMDowMImUDzUAAAAASUVORK5CYII=" />
     scale: 0,
     transformOrigin: 'center center',
     ease: Back.easeOut
+  }, 'a').to(Logo, 0.1, { opacity: 0.4 }, 'b').to(Logo, 0.1, { opacity: 0.6 }, 'c').to(bgd, 0.2, {
+    opacity: 0.1,
+    delay: 0.5
   }, 0.2).staggerFrom(keyboard, 0.5, {
     opacity: 0,
     y: '-=100',
@@ -579,9 +582,6 @@ RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMC0wOVQyMDowMjoyNyswMDowMImUDzUAAAAASUVORK5CYII=" />
   }, 0.05).staggerFrom(asset, 0.5, { opacity: 0 }, 0.05).to(Logo, 0.2, {
     opacity: 0.8,
     ease: Elastic.easeOut,
-    delay: 0.5
-  }, 'a').to(Logo, 0.1, { opacity: 0.4 }, 'b').to(Logo, 0.1, { opacity: 0.6 }, 'c').to(bgd, 0.2, {
-    opacity: 0.1,
     delay: 0.5
   }, 'a-=0.05').to(bgd, 0.1, { opacity: 1 }, 'b-=0.05').to(bgd, 0.1, { opacity: 0.5 }, 'c-=0.05').fromTo(lampLine, 0.2, { opacity: 0 }, {
     opacity: 0.2,
